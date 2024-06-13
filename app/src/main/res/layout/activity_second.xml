@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_prev"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="415dp"
+        android:layout_height="509dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/leftarrow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bird" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <TextView
+        android:id="@+id/birdimage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="200dp"
+        android:text="Blue bird"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/leftarrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/right" />
+
+    <ImageView
+        android:id="@+id/leftarrow"
+        android:layout_width="41dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="376dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/leftarrow" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="109dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:srcCompat="@drawable/right"
+        tools:layout_editor_absoluteY="282dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="18dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="-35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/leftarrow"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/leftarrow"
+        app:srcCompat="@drawable/right" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
